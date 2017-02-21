@@ -3,7 +3,6 @@
     "description": "Links social networks for EasyiiCMS",
     "keywords": ["yii", "easyiiCMS", "CMS", "module"],
     "type": "yii2-extension",
-    "minimum-stability": "beta",
     "authors": [
         {
             "name": "Dmitriy Groznyy",
