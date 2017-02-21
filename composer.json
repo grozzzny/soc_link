@@ -1,5 +1,5 @@
 {
-    "name": "soc_link",
+    "name": "grozzzny/soc_link",
     "description": "Links social networks for EasyiiCMS",
     "keywords": ["yii", "easyiiCMS", "CMS", "module"],
     "type": "yii2-extension",
