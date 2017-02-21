@@ -8,7 +8,7 @@ class m170221_125514_soc_links extends Migration
 {
     public function up()
     {
-        //Главная таблица - чемпионаты
+        
         $this->createTable('soc_link', [
             'id' => Schema::TYPE_PK,
             'name' => Schema::TYPE_STRING,
