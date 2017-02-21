@@ -1,0 +1,21 @@
+{
+    "name": "grozzzny/soc_link",
+    "description": "Links social networks for EasyiiCMS",
+    "keywords": ["yii", "easyiiCMS", "CMS", "module"],
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Dmitriy Groznyy",
+            "email": "grozzzny@gmail.com",
+            "homepage": "http://pr-kenig.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "grozzzny\\soc_link\\": ""
+        }
+    }
+}
