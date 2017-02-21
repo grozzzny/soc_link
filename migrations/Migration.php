@@ -2,12 +2,10 @@
 
 namespace soc_link\migrations;
 
-use grozzzny\soc_link\migrations\Migration;
-
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class Migration extends Migration
+class Migration extends \yii\db\Migration
 {
     /**
      * @var string
