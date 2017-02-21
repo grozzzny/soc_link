@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\soc_link;
+namespace grozzzny\soc_link;
 
 class SocLinkModule extends \yii\easyii\components\Module
 {
