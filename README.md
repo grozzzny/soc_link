@@ -1,4 +1,4 @@
-Role Base Access for EasyiiCMS
+Links social networks for EasyiiCMS
 ==============================
 
 This module allows to [Easy yii2 cms](http://github.com/noumo/easyii) 
