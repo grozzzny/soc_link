@@ -4,6 +4,7 @@
     "keywords": ["yii", "easyiiCMS", "CMS", "module"],
     "type": "yii2-extension",
     "license": "MIT",
+    "minimum-stability": "dev"
     "authors": [
         {
             "name": "Dmitriy Groznyy",
