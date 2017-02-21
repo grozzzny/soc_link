@@ -2,12 +2,6 @@
 
 use yii\db\mysql\Schema;
 
-/**
- * Class m170221_125514_soc_links
- * php composer.phar require grozzzny/soc_link "dev-master"
- * composer require grozzzny/soc_link "dev-master"
- * php yii migrate --migrationPath=@vendor/grozzzny/soc_link/migrations
- */
 class m170221_125514_soc_links extends \soc_link\migrations\Migration
 {
     public function up()
@@ -36,6 +30,7 @@ class m170221_125514_soc_links extends \soc_link\migrations\Migration
     public function down()
     {
         $this->dropTable('soc_link');
+        $this->delete('easyii_modules',['name' => 'soclink']);
 
         echo "m170221_125514_soc_links cannot be reverted.\n";
 
