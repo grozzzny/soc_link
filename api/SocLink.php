@@ -1,9 +1,9 @@
 <?php
-namespace app\modules\soc_link\api;
+namespace grozzzny\soc_link\api;
 
 use yii\easyii\components\API;
 use yii\easyii\helpers\Data;
-use app\modules\soc_link\models\SocLink as SocLinkModel;
+use grozzzny\soc_link\models\SocLink as SocLinkModel;
 
 class SocLink extends API
 {

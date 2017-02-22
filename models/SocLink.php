@@ -1,5 +1,5 @@
 <?php
-namespace app\modules\soc_link\models;
+namespace grozzzny\soc_link\models;
 
 use yii\easyii\behaviors\CacheFlush;
 

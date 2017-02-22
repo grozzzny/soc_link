@@ -1,9 +1,9 @@
 <?php
-namespace app\modules\soc_link\controllers;
+namespace grozzzny\soc_link\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
-use app\modules\soc_link\models\SocLink;
+use grozzzny\soc_link\models\SocLink;
 use yii\widgets\ActiveForm;
 
 use yii\easyii\components\Controller;
