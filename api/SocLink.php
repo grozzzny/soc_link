@@ -12,7 +12,7 @@ class SocLink extends API
         $items = SocLinkModel::find()->all();
         $html = '';
         foreach ($items as $item) {
-            $html .= '<a href="'.$item->link.'" title="'.$item->name.'"><i class="'.$item->icon.'" aria-hidden="true"></i></a>';
+            $html .= '<li><a href="'.$item->link.'" title="'.$item->name.'"><i class="'.$item->icon.'" aria-hidden="true"></i></a></li>';
         }
         return $html;
     }
