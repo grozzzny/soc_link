@@ -2,13 +2,13 @@
 
 use yii\db\mysql\Schema;
 
-use grozzzny\soc_link\migrations\Migration;
+use \grozzzny\soc_link\migrations\Migration;
 
 class m170221_125514_soc_links extends Migration
 {
     public function up()
     {
-        
+
         $this->createTable('soc_link', [
             'id' => Schema::TYPE_PK,
             'name' => Schema::TYPE_STRING,

@@ -1,6 +1,6 @@
 <?php
 
-namespace soc_link\migrations;
+namespace grozzzny\soc_link\migrations;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>
@@ -14,7 +14,7 @@ class Migration extends \yii\db\Migration
     protected $restrict = 'RESTRICT';
     protected $cascade = 'CASCADE';
     protected $dbType;
-    
+
 
     /**
      * @inheritdoc
