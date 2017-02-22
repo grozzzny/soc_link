@@ -21,7 +21,7 @@ class m170221_125514_soc_links extends Migration
             'name' => 'soclink',
             'class' => 'grozzzny\soc_link\SocLinkModule',
             'title' => 'Links social networks',
-            'icon' => 'glyphicon-asterisk',
+            'icon' => 'font',
             'status' => 1,
             'settings' => '[]',
             'notice' => 0,
