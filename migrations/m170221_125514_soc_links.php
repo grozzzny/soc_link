@@ -2,7 +2,7 @@
 
 use yii\db\mysql\Schema;
 
-use \grozzzny\soc_link\migrations\Migration;
+use grozzzny\soc_link\migrations\Migration;
 
 class m170221_125514_soc_links extends Migration
 {
