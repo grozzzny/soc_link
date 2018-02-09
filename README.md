@@ -12,6 +12,12 @@ $ php composer.phar require grozzzny/soc_link "dev-master"
 $ composer require grozzzny/soc_link "dev-master"
 ```
 
+v2.0 for easyii2
+```bash
+$ php composer.phar require grozzzny/soc_link "v2.x-dev"
+$ composer require grozzzny/soc_link "v2.x-dev"
+```
+
 Run migrations
 ```bash
 php yii migrate --migrationPath=@vendor/grozzzny/soc_link/migrations
