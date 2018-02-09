@@ -13,5 +13,5 @@
 <?= $form->field($model, 'link') ?>
 <?= $form->field($model, 'icon') ?>
 
-<?= Html::submitButton(Yii::t('easyii', 'Save'), ['class' => 'btn btn-primary']) ?>
+<?= Html::submitButton(Yii::t('easyii2', 'Save'), ['class' => 'btn btn-primary']) ?>
 <?php ActiveForm::end(); ?>

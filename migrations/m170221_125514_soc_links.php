@@ -17,13 +17,13 @@ class m170221_125514_soc_links extends Migration
         ], $this->tableOptions);
 
 
-        $this->insert('easyii_modules', [
+        $this->insert('easyii2_modules', [
             'name' => 'soclink',
             'class' => 'grozzzny\soc_link\SocLinkModule',
             'title' => 'Links social networks',
             'icon' => 'font',
             'status' => 1,
-            'settings' => '[]',
+            'settings' => '{"modelSocLink":"\\grozzzny\\soc_link\\models\\SocLink"}',
             'notice' => 0,
             'order_num' => 120
         ]);
@@ -32,7 +32,7 @@ class m170221_125514_soc_links extends Migration
     public function down()
     {
         $this->dropTable('soc_link');
-        $this->delete('easyii_modules',['name' => 'soclink']);
+        $this->delete('easyii2_modules',['name' => 'soclink']);
 
         echo "m170221_125514_soc_links cannot be reverted.\n";
 

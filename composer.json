@@ -1,7 +1,7 @@
 {
     "name": "grozzzny/soc_link",
-    "description": "Links social networks for EasyiiCMS",
-    "keywords": ["yii", "easyiiCMS", "CMS", "module"],
+    "description": "Links social networks for easyii2CMS",
+    "keywords": ["yii", "easyii2CMS", "CMS", "module"],
     "type": "yii2-extension",
     "license": "MIT",
     "authors": [

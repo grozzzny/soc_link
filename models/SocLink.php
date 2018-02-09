@@ -1,9 +1,9 @@
 <?php
 namespace grozzzny\soc_link\models;
 
-use yii\easyii\behaviors\CacheFlush;
+use yii\easyii2\behaviors\CacheFlush;
 
-class SocLink extends \yii\easyii\components\ActiveRecord
+class SocLink extends \yii\easyii2\components\ActiveRecord
 {
     const CACHE_KEY = 'soc_link';
 

@@ -11,10 +11,10 @@ $module = $this->context->module->id;
                 <?php if($action === 'edit') : ?>
                     <i class="glyphicon glyphicon-chevron-left font-12"></i>
                 <?php endif; ?>
-                <?= Yii::t('easyii', 'List') ?>
+                <?= Yii::t('easyii2', 'List') ?>
             </a>
         </li>
-        <li <?= ($action === 'create') ? 'class="active"' : '' ?>><a href="<?= Url::to(['/admin/'.$module.'/a/create']) ?>"><?= Yii::t('easyii', 'Create') ?></a></li>
+        <li <?= ($action === 'create') ? 'class="active"' : '' ?>><a href="<?= Url::to(['/admin/'.$module.'/a/create']) ?>"><?= Yii::t('easyii2', 'Create') ?></a></li>
     </ul>
     <br/>
 <?php elseif($action === 'edit') : ?>
@@ -22,7 +22,7 @@ $module = $this->context->module->id;
         <li>
             <a href="<?= $this->context->getReturnUrl(['/admin/'.$module])?>">
                 <i class="glyphicon glyphicon-chevron-left font-12"></i>
-                <?= Yii::t('easyii/text', 'Texts') ?>
+                <?= Yii::t('easyii2/text', 'Texts') ?>
             </a>
         </li>
     </ul>

@@ -33,7 +33,7 @@ $module = $this->context->module->id;
                 <?php if(IS_ROOT) : ?>
                     <td><?= $item->link ?></td>
                     <td><?= $item->icon ?></td>
-                    <td><a href="<?= Url::to(['/admin/'.$module.'/a/delete', 'id' => $item->primaryKey]) ?>" class="glyphicon glyphicon-remove confirm-delete" title="<?= Yii::t('easyii', 'Delete item') ?>"></a></td>
+                    <td><a href="<?= Url::to(['/admin/'.$module.'/a/delete', 'id' => $item->primaryKey]) ?>" class="glyphicon glyphicon-remove confirm-delete" title="<?= Yii::t('easyii2', 'Delete item') ?>"></a></td>
                 <?php endif; ?>
             </tr>
     <?php endforeach; ?>
@@ -43,5 +43,5 @@ $module = $this->context->module->id;
         'pagination' => $data->pagination
     ]) ?>
 <?php else : ?>
-    <p><?= Yii::t('easyii', 'No records found') ?></p>
+    <p><?= Yii::t('easyii2', 'No records found') ?></p>
 <?php endif; ?>

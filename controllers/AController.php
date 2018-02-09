@@ -3,10 +3,10 @@ namespace grozzzny\soc_link\controllers;
 
 use Yii;
 use yii\data\ActiveDataProvider;
-use grozzzny\soc_link\models\SocLink;
+use yii\easyii2\components\ActiveRecord;
 use yii\widgets\ActiveForm;
 
-use yii\easyii\components\Controller;
+use yii\easyii2\components\Controller;
 
 
 class AController extends Controller
@@ -15,8 +15,9 @@ class AController extends Controller
 
     public function actionIndex()
     {
+        $model = ActiveRecord::getModelByName('SocLink', 'soclink');
         $data = new ActiveDataProvider([
-            'query' => SocLink::find(),
+            'query' => $model::find(),
         ]);
         return $this->render('index', [
             'data' => $data
@@ -25,7 +26,7 @@ class AController extends Controller
 
     public function actionCreate($slug = null)
     {
-        $model = new SocLink();
+        $model = ActiveRecord::getModelByName('SocLink', 'soclink');
         if ($model->load(Yii::$app->request->post())) {
             if(Yii::$app->request->isAjax){
                 Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
@@ -54,7 +55,8 @@ class AController extends Controller
 
     public function actionEdit($id)
     {
-        $model = SocLink::findOne($id);
+        $model = ActiveRecord::getModelByName('SocLink', 'soclink');
+        $model = $model::findOne($id);
 
         if($model === null){
             $this->flash('error', 'Не найдена');
@@ -85,7 +87,8 @@ class AController extends Controller
 
     public function actionDelete($id)
     {
-        if(($model = SocLink::findOne($id))){
+        $model = ActiveRecord::getModelByName('SocLink', 'soclink');
+        if(($model = $model::findOne($id))){
             $model->delete();
         } else {
             $this->error = 'Не найдена';
