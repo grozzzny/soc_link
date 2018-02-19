@@ -1,0 +1,40 @@
+/**
+ * Soc links
+ */
+.soc-link{
+  padding-left: 0;
+  list-style: none;
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  & > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  i {
+    background: transparent;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  &.soc-link-default{
+    a{
+      color: white;
+    }
+    i {
+      border: solid 1px black;
+      color: black;
+      &:hover {
+        background: black;
+        color: white;
+      }
+    }
+  }
+
+}

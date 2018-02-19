@@ -1,0 +1,37 @@
+/**
+ * Soc links
+ */
+.soc-link {
+  padding-left: 0;
+  list-style: none;
+}
+.soc-link ul,
+.soc-link ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.soc-link > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.soc-link i {
+  background: transparent;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  line-height: 35px;
+}
+.soc-link.soc-link-default a {
+  color: white;
+}
+.soc-link.soc-link-default i {
+  border: solid 1px black;
+  color: black;
+}
+.soc-link.soc-link-default i:hover {
+  background: black;
+  color: white;
+}

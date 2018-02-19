@@ -1,38 +1,27 @@
 <?php
 
+use yii\db\Migration;
 use yii\db\mysql\Schema;
-
-use grozzzny\soc_link\migrations\Migration;
 
 class m170221_125514_soc_links extends Migration
 {
+    public $engine = 'ENGINE=MyISAM DEFAULT CHARSET=utf8';
+
     public function up()
     {
 
         $this->createTable('soc_link', [
-            'id' => Schema::TYPE_PK,
+            'id' => $this->primaryKey(),
             'name' => Schema::TYPE_STRING,
             'link' => Schema::TYPE_STRING,
             'icon' => Schema::TYPE_STRING,
-        ], $this->tableOptions);
+        ], $this->engine);
 
-
-        $this->insert('easyii2_modules', [
-            'name' => 'soclink',
-            'class' => 'grozzzny\soc_link\SocLinkModule',
-            'title' => 'Links social networks',
-            'icon' => 'font',
-            'status' => 1,
-            'settings' => '{"modelSocLink":"\\grozzzny\\soc_link\\models\\SocLink"}',
-            'notice' => 0,
-            'order_num' => 120
-        ]);
     }
 
     public function down()
     {
         $this->dropTable('soc_link');
-        $this->delete('easyii2_modules',['name' => 'soclink']);
 
         echo "m170221_125514_soc_links cannot be reverted.\n";
 
