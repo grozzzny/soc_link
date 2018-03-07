@@ -2,6 +2,7 @@
 namespace grozzzny\soc_link\models;
 
 use yii\easyii2\behaviors\CacheFlush;
+use Yii;
 
 /**
  * Class SocLink
